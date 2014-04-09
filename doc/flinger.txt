@@ -25,6 +25,10 @@ License: You may redistribute this plugin under the same terms as Vim itself
         |flinger| using the default keymappings, or by defining their own (see
         |flinger-settings|).
 
+        Additionally, if the lines in the original buffer contain line numbers
+        to the right of the filenames, separated by whitespace from the
+        filenames, the cursor is moved to that line number.
+
     Settings                                                *flinger-settings*
 
         The following settings allow you to customize the keys which control
@@ -40,8 +44,8 @@ License: You may redistribute this plugin under the same terms as Vim itself
         the original buffer:
                 :let g:flinger_previous_file = ",k"
 
-        To exit |flinger| mode and return to the buffer which was active when
-        |:StartFlinger| was called:
+        To change the mapping to exit |flinger| mode and return to the buffer
+        which was active when |:StartFlinger| was called:
                 :let g:flinger_deactivate = ",f"
 
 ==============================================================================
